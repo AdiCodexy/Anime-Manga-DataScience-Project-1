@@ -40,4 +40,22 @@ The dataset encompasses a rich mix of continuous, categorical, and text data:
 
 ## Core Analytical Insights
 
-1. **The Engagement Loop:** A powerful positive correlation exists between
+1. **The Engagement Loop:** A powerful positive correlation exists between `Members` and `Favorites`. Community size scales predictably with hardcore fan dedication.
+2. **The Popularity Rank Paradox:** A noticeable negative correlation exists between `Score` and `Popularity`. Because popularity is tracked as an ordinal rank (where 1 is best), this proves mathematically that higher user scores correlate strongly with a lower rank number.
+3. **The Episode Count Neutrality:** The dataset reveals that a show’s episode count has virtually no linear impact on its final critical reception; short-form seasonal series and massive long-running epics compete on an equal playing field.
+
+---
+
+## Tech Stack
+* **Language:** Python 3
+* **Data Manipulation:** `pandas`, `numpy`
+* **Data Visualization:** `matplotlib.pyplot`
+* **Environment:** Jupyter Notebook
+
+---
+
+## How to Run
+1. Clone the repository to your local machine.
+2. Ensure you have the required libraries installed: `pip install pandas numpy matplotlib`
+3. Place the `anime-dataset-2023.csv` (or corresponding raw data file) in the root directory.
+4. Execute the notebooks sequentially: `data_cleaning.ipynb` -> `Stats.ipynb` -> `visualization.ipynb`.
